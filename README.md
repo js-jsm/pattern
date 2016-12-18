@@ -7,6 +7,40 @@
 - 과제는 다음주까지 풀어서 스터디 시작시 리뷰.
 
 
+## 폴더 및 파일 네이밍 규칙
+구분은 '-' / 띄어쓰기는 '_'
+
+[Ch]-[title]/[index]-[name].js
+[Ch]-[title]/[index]-[name]-tests.js
+
+```cmd
+예) 예제 2-7 ReservationSaver를 포함한 테스트
+2-도구_다루기/03-createReservationSaver.js
+2-도구_다루기/03-createReservationSaver-tests.js
+```
+
+README.md : 예제 타이핑(링크 없는 경우) 및 예제 링크(현재폴더 내부 파일들).
+
+
+
+## 설정 및 실행 방법
+
+### 1) 초기 세팅
+
+```bash
+[sudo] npm i karma karma-cli jasmine // (karma, jasmine 처음 설치시)
+npm i
+```
+
+### 2) karma 실행
+```bash
+karma start
+```
+
+### 3) 경로 지정
+`karma.conf.js`의 `path`를 해당 주차 경로로 변경.
+
+
 ## 챕터
 
 ### 2. 도구 다루기 (권성)
@@ -32,18 +66,3 @@
 ### 21. 고급 프로그램 아키텍쳐 테스팅
 ### 22. DOM 접근 테스팅
 ### 23. 표준에 맞추기
-
-
-## 폴더 및 파일 네이밍 규칙
-구분은 '-' / 띄어쓰기는 '_'
-
-[Ch]-[title]/[index]-[name].js
-[Ch]-[title]/[index]-[name]-tests.js
-
-```cmd
-예) 예제 2-7 ReservationSaver를 포함한 테스트
-2-도구_다루기/03-createReservationSaver.js
-2-도구_다루기/03-createReservationSaver-tests.js
-```
-
-README.md : 예제 타이핑(링크 없는 경우) 및 예제 링크(현재폴더 내부 파일들).
