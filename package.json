@@ -1,0 +1,30 @@
+{
+  "name": "pattern",
+  "version": "1.0.0",
+  "description": "study for 'javascript pattern and test'",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-jsm/pattern.git"
+  },
+  "keywords": [
+    "pattern",
+    "javascript",
+    "study"
+  ],
+  "author": "js-jsm study",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/js-jsm/pattern/issues"
+  },
+  "homepage": "https://github.com/js-jsm/pattern#readme",
+  "scripts": {},
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2"
+  },
+  "dependencies": {}
+}
