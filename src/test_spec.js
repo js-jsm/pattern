@@ -1,3 +1,5 @@
+const { sqrt, pow } = require('./test');
+
 describe("test", () => {
 
   it("sqrt should be square root", () => {
