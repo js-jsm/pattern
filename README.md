@@ -24,7 +24,7 @@
 
 - README.md : 예제 타이핑(링크 없는 경우) 및 예제 링크(현재폴더 내부 파일들).
 
-- spec 파일 내부의 최상단 `it()` 내부의 description에 각 예제 번호를 기입한다.
+- spec 파일 내부의 최상단 `describe()` 내부의 description에 각 예제 번호를 기입한다.
 
 
 
