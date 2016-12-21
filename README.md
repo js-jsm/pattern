@@ -9,9 +9,10 @@
 
 ## 폴더 및 파일 네이밍 규칙
 
-- 구분은 '-' / 띄어쓰기는 '_'
-`[Ch]-[title]/[index]-[name].js`
+- 구분은 '-' / 띄어쓰기는 '_'  
+`[Ch]-[title]/[index]-[name].js`  
 `[Ch]-[title]/[index]-[name]_spec.js`
+
 
 - 대상파일과 테스트파일은 `_spec` 부분을 제외하곤 파일명이 같아야 함
 
