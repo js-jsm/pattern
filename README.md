@@ -8,18 +8,22 @@
 
 
 ## 폴더 및 파일 네이밍 규칙
-구분은 '-' / 띄어쓰기는 '_'
 
-[Ch]-[title]/[index]-[name].js
-[Ch]-[title]/[index]-[name]-tests.js
+- 구분은 '-' / 띄어쓰기는 '_'
+`[Ch]-[title]/[index]-[name].js`
+`[Ch]-[title]/[index]-[name]_spec.js`
+
+- 대상파일과 테스트파일은 `_spec` 부분을 제외하곤 파일명이 같아야 함
 
 ```cmd
 예) 예제 2-7 ReservationSaver를 포함한 테스트
 2-도구_다루기/03-createReservationSaver.js
-2-도구_다루기/03-createReservationSaver-tests.js
+2-도구_다루기/03-createReservationSaver_spec.js
 ```
 
-README.md : 예제 타이핑(링크 없는 경우) 및 예제 링크(현재폴더 내부 파일들).
+- README.md : 예제 타이핑(링크 없는 경우) 및 예제 링크(현재폴더 내부 파일들).
+
+- spec 파일 내부의 최상단 `it()` 내부의 description에 각 예제 번호를 기입한다.
 
 
 
