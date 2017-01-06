@@ -29,6 +29,3 @@ describe("06 - DiContainer", () => {
     });
   });
 });
-
-// 광고 정보를 가져온다.
-TravelService.getSuggestedTicket(attendee.homeAirport);
