@@ -12,7 +12,7 @@ class DiContainer4 {
         throw new Error(this.messages.registerRequiresArgs);
       }
     }
-    this.registrations[name] = {func: func};
+    this.registrations[name] = {func};
   }
   get(name) {
     return this.registrations[name].func();
