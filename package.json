@@ -18,8 +18,14 @@
     "url": "https://github.com/js-jsm/pattern/issues"
   },
   "homepage": "https://github.com/js-jsm/pattern#readme",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint 02-도구_다루기/04-코드_검사_도구/*.js -f node_modules/eslint-html-reporter/reporter.js -o eslint.html; open eslint.html"
+  },
   "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-html-reporter": "^0.5.2",
+    "eslint-plugin-jasmine": "^2.2.0",
+    "eslint-plugin-react": "^6.9.0",
     "jasmine": "^2.5.2",
     "karma": "^1.3.0",
     "karma-chrome-launcher": "^2.0.0",
