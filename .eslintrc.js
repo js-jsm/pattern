@@ -1,26 +1,13 @@
 module.exports = {
     "env": {
         "browser": true,
-        "commonjs": true,
-        "es6": true,
-        "jasmine": true
+        "es6": true
     },
-    "extends": ["eslint:recommended", "plugin:jasmine/recommended"],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "jsx": true
-        },
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        'jasmine'
-    ],
+    "extends": "eslint:recommended",
     "rules": {
         "indent": [
             "error",
-            4
+            "tab"
         ],
         "linebreak-style": [
             "error",
