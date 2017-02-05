@@ -19,4 +19,8 @@ Conference.attendee = function(firstName, lastName) {
       checkedIn = true;
     }
   };
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 9e669668fc2371a42548266297da60444611cedb
