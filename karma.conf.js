@@ -15,7 +15,6 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       "karma.debug.js",
-<<<<<<< HEAD
       "05-콜백_패턴/*.js"
     ],
 
