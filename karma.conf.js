@@ -1,5 +1,4 @@
-// Karma configuration
-// Generated on Sun Dec 18 2016 12:17:44 GMT+0900 (KST)
+const path = require('path');
 
 module.exports = function(config) {
   config.set({
@@ -16,6 +15,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       "karma.debug.js",
+<<<<<<< HEAD
       "05-콜백_패턴/*.js"
     ],
 
@@ -28,6 +28,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+        "tests.webpack.js": ["webpack", "sourcemap"]
     },
 
 
@@ -65,6 +66,11 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    webpack: {
+        cache: true,
+        devtool: 'inline-source-map'
+    }
   })
 }
