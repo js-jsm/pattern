@@ -1,4 +1,8 @@
 node_modules
 .DS_Store
 npm-debug.log
+<<<<<<< HEAD
 karma.conf.js
+=======
+src
+>>>>>>> 9b15d6f2a22b1d8a21d33520c15a3c3108116fa1
