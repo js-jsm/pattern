@@ -19,7 +19,7 @@ module.exports = {
     ],
     "rules": {
         "indent": [
-            "error",
+            0,
             4
         ],
         "linebreak-style": [
@@ -27,11 +27,11 @@ module.exports = {
             "unix"
         ],
         "quotes": [
-            "error",
+            0,
             "single"
         ],
         "semi": [
-            "error",
+            0,
             "always"
         ]
     }
