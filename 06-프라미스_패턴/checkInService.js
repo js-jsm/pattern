@@ -1,15 +1,24 @@
-var Conference = Conference || {};
+﻿var Conference = Conference || {};
 
-Conference.checkInService = function(checkInRecoder) {
+Conference.checkInService = function(checkInRecorder) {
   'use strict';
-  var recorder = checkInRecoder;
+
+  var recorder = checkInRecorder;
 
   return {
     checkIn: function(attendee) {
-      attendee.checkIn();
-      recorder.recordCheckIn(attendee).then(
-       attendee.setCheckInNumber,
-       attendee.undoCheckIn);
+      return new Promise( function checkInPromise(resolve, reject) {
+        attendee.checkIn();
+        recorder.recordCheckIn(attendee).then(
+          function onRecordCheckInSucceeded(checkInNumber) {
+            attendee.setCheckInNumber(checkInNumber);
+            resolve(checkInNumber);
+          },
+          function onRecordCheckInFailed(reason) {
+            attendee.undoCheckIn();
+            reject(reason);
+          });
+      });
     }
- };
+  };
 };
